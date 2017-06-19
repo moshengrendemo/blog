@@ -4,13 +4,72 @@
 	<meta charset="UTF-8">
 	<title>我的书库</title>
 	<link rel="stylesheet" type="text/css" href="css/books.css">
+
+
+<style>
+.pdfobject-container { 
+	height: 800px;
+	width: 80%;
+	margin: 0 auto;
+}
+.pdfobject {
+ border: 1px solid #f00; 
+    clear: both;
+    /*width: 80%;
+	height: 1000px;*/
+	margin: 0 auto;
+	border: 1px solid #666;
+ 
+}
+/*.example1{
+	width: 80%;
+	clear: both;
+	height: 1000px;
+	border: 1px solid #666;
+    margin: 0 auto;
+}*/
+</style>
+
+
+
 </head>
 <body>
-<div class="books">
-<h3>我的书单</h3>
-    <div class="item">
+<div class="example1">
+</div> 
+
+<div id="books">
+    <h3>我的书单</h3>
+    <div id="item">
     	
 	    <ul>
+        <li id="item1"><a href="#">
+    		<img src="img/cssquanwei.jpg">
+    		<p class="desc">css权威指南</p>
+    	</a></li>
+    	 <li id="item2"><a href="#">
+    		<img src="img/httpquanwei.jpg">
+    		<p class="desc">http权威指南</p>
+    	</a></li>
+    	 <li id="item3"><a href="#">
+    		<img src="img/javascriptgaoji.jpg">
+    		<p class="desc">javascript高级程序设计</p>
+    	</a></li>
+    	 <li id="item4"><a href="#">
+    		<img src="img/javascriptquanwei.jpg">
+    		<p class="desc">javascript权威指南</p>
+    	</a></li>
+    	 <li id="item5"><a href="#">
+    		<img src="img/sheji.jpg">
+    		<p class="desc">JavaScript设计模式</p>
+    	</a></li>
+    	 <li id="item6"><a href="#">
+    		<img src="img/yuyan.jpg">
+    		<p class="desc">javascript语言精粹</p>
+    	</a></li>
+
+
+
+
 	    <li><a href="#">
     		<img src="img/tiwen.jpg">
     		<p class="desc">提问的力量</p>
@@ -77,6 +136,29 @@
     
 	
 </div>	
+
+
+ <script src="js/pdfobject.js"></script>
+<script>
+var books=document.getElementById("books");
+var item=document.getElementById("item");
+
+
+PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1");
+
+//PDF打开参数“页面”选项别名。这里输入的任何数字都会导致PDF被打开到指定的页码（如果浏览器支持它）。如果未指定，PDF将在第1页打开。
+
+// var options = {
+//     height: "400px",
+//     pdfOpenParams: { view: 'FitV', page: '10' }
+// };
+// PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1", options); 
+
+
+
+
+</script>
+
 
 </body>
 </html>
