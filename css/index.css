@@ -22,7 +22,6 @@ a{
 	top: 0;*/
 	max-width:123rem;
 	height: 8rem;
- 
 	overflow: hidden;
 	background-color: #fafafa;
 	border-bottom: 1px solid #555;
@@ -47,10 +46,10 @@ a{
 float: left;
 }
 
-.one{
+.logo{
 	text-align: center;
-	color:#3dca99;
-	font-size: 2.8rem;
+	color:#c9b4a1;
+	font-size: 2.4rem;
 }
 
 
@@ -122,10 +121,6 @@ float: left;
 	margin-right: 210px;
 }*/
 
-
-
-
-
 .container{
 	padding-right:15px;
 	padding-left:15px;
@@ -133,28 +128,78 @@ float: left;
 	margin:0 auto;
 	min-width:1230px !important;
 	width:1230px !important;
-	
-
+   position: relative;
 }
 .bo-left{
 	width: 150px;
 	padding:10px 0;
+	margin:0 auto;
 	background-color: #fff;
 	position: absolute;
 	-webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
 	box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+	
+}
+/*广告区域样式*/
+.advertising-content{
+	width:150px;
+	height:620px;
+	position: absolute;
+	top:248px;
+	text-align:center;
+	margin:30px 0;
+	background-color:#fff;
+	border:1px solid #555;
+}
+.content-img{
+	width:100%;
+	margin:10px auto;
+}
+.content-img{
+	display:block;
+	width:64px;
+	height:64px;
+}
+.nav{
+	
+}
+.nav .one{
+background:url("../icon/web.png") no-repeat 20px center;
+background-size:20px 20px;
+}
+.nav .two{
+background:url("../icon/account.png") no-repeat 20px center;
+background-size:20px 20px;
+}
+.nav .three{
+background:url("../icon/add.png") no-repeat 20px center;
+background-size:20px 20px;
+}
+.nav .four{
+background:url("../icon/favorite.png") no-repeat 20px center;
+background-size:20px 20px;
+}
+.nav .five{
+background:url("../icon/office.png") no-repeat 20px center;
+background-size:20px 20px;
 }
 .bo-left .nav>li>a{
 	display: block;
 	line-height: 40px;
 	background-color: #fff;
 	padding:0 20px;
-	color:#404040;
+	color:#000;
 	font-size: 16px;
 	text-align: center;
 
 }
-
+.nav>li>a:hover{
+  color:#c9b4a1;
+}
+.nav>li:active>a{
+  color:#fff;
+  background-color:#c9b4a1;
+}
 .bo-main{
 	margin-left: 180px;
 	position: relative;
@@ -163,7 +208,6 @@ float: left;
 .bo-main-left{
 	float: left;
 	width: 100%;
-	
 }
 .bo-main-right{
 	float: left;
@@ -173,7 +217,7 @@ float: left;
 }
 /*做笔记*/
 .note{
-	/*display: block;*/
+	display: block;
 	font-size: 18px;
 	width: 310px;
 	height: 42px;
@@ -182,6 +226,19 @@ float: left;
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	background-color: #fff;
+}
+.note-a{
+	display: block;
+	color:#000;
+	background:url("../icon/edit.png") no-repeat 100px center;
+    background-size:20px 20px;
+}
+.note a:hover{
+  color:#c9b4a1;
+}
+.note a:active{
+  color:#fff;
+  background-color:#c9b4a1;
 }
 /*推荐主题和热门技术文章*/
 .theme,.hot-article{
