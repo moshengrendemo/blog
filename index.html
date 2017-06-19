@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的博客网站开发</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="js/rolling.js" type="text/javascript"></script>
+<!--广告滚动样式表-->
+ <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+            
+        #banner {
+            position: relative;
+            width: 680px;
+            height: 239px;
+            overflow: hidden;
+            margin-bottom:20px;
+        }
+        
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 4760px;
+            height: 239px;
+        }
+        
+        #list img {
+            float: left;
+            width: 680px;
+            height: 239px;
+        }
+        
+        #buttons {
+            position: absolute;
+            left: 300px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        
+        #buttons span {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+           /* border: 1px solid #555;*/
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+        }
+        
+        #buttons .on {
+            background: orangered;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 100px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .3);
+            cursor: pointer;
+        }
+        
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, .7);
+        }
+        
+        #banner:hover .arrow {
+            display: block;
+        }
+        
+        #prev {
+            left: 20px;
+        }
+        
+        #next {
+            right: 20px;
+        }
+    </style>
+
+
+
+
+
+
+<!-- <style>
+.pdfobject-container { 
+	height: 800px;
+	width: 80%;
+	margin: 0 auto;
+}
+.pdfobject {
+ border: 1px solid #f00; 
+    clear: both;
+    /*width: 80%;
+	height: 1000px;*/
+	margin: 0 auto;
+	border: 1px solid #666;
+ 
+}
+/*.example1{
+	width: 80%;
+	clear: both;
+	height: 1000px;
+	border: 1px solid #666;
+    margin: 0 auto;
+}*/
+</style> -->
+</head>
+<body>
+	<header class="head">
+	
+		<div class="head-box">
+		<ul>
+		   <li class="one">墨客图图</li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">博客</a></li>
+			<li><a href="https://github.com/moshengrendemo">Github</a></li>
+			<li><a href="#">技术前沿</a></li>
+			<li><a href="#">web前端导航</a></li>
+			<li><a href="books.html">我的书库</a></li>
+		</ul>		
+	</div>	
+ <div class="login"><a href="#">登录</a></div>	
+	</header>
+
+<!-- <div class="advert">
+     	<div class="middle">
+     	     <div class="inner">  
+             </div>
+        </div>
+     	<div class="left">
+              <ul>
+              	<li class="small-1"><a href="#"><img src="#"></a></li>
+              	<li class="small-2"><a href="#"><img src="#"></a></li>
+              </ul>
+        </div>
+       <div class="right">右边栏</div>
+</div>
+ -->
+
+<div class="container">
+<!-- 左功能导航-->
+	<div class="bo-left">
+		<ul class="nav">
+			<li><a href="#">功能1</a></li>
+			<li><a href="#">功能2</a></li>
+			<li><a href="#">功能3</a></li>
+			<li><a href="#">功能4</a></li>
+			<li><a href="#">功能5</a></li>
+		</ul>
+
+	</div>
+	<!-- 主内容区域 -->
+	<div class="bo-main">
+		<div class="bo-main-left">
+             <div class="bo-main-left-content">
+             <!-- 轮播图 -->
+                <div id="banner">
+        <div id="list" style="left: -680px;">
+            <img src="img/1.jpg" alt="1" />
+            <img src="img/1.jpg" alt="1" />
+            <img src="img/2.jpg" alt="2" />
+            <img src="img/3.jpg" alt="3" />
+            <img src="img/4.jpg" alt="4" />
+            <img src="img/5.jpg" alt="5" />
+            <img src="img/5.jpg" alt="5" />
+        </div>
+        <div id="buttons">
+            <span index="1" class="on"></span>
+            <span index="2"></span>
+            <span index="3"></span>
+            <span index="4"></span>
+            <span index="5"></span>
+        </div>
+        <span id="prev" class="arrow">&lt;</span>
+        <span  id="next" class="arrow">&gt;</span>
+    </div>
+             	<!-- 主区域文章 -->
+             	<ul class="article">
+             		<li class="item"><a href="#">文章1</a></li>
+             		<li class="item"><a href="#">文章2</a></li>
+             		<li class="item"><a href="#">文章3</a></li>
+             		<li class="item"><a href="#">文章4</a></li>
+             		<li class="item"><a href="#">文章5</a></li>
+             		<li class="item"><a href="#">文章6</a></li>
+             		<li class="item"><a href="#">文章7</a></li>
+             		<li class="item"><a href="#">文章8</a></li>
+             		<li class="item"><a href="#">文章9</a></li>
+             	</ul>
+
+             </div>
+		</div>
+		<div class="bo-main-right">
+		<!-- 做笔记 -->
+           <div class="note">做笔记</div>
+           <!-- 推荐话题 -->
+           <div class="theme">推荐话题
+                  <p>没有看不懂的代码,只有不够强的动力.</p>
+             <p>产品源于需求,没有需求怎么做产品.技术为产品服务,产品为用户服务.</p>
+           </div>
+           <!-- 热门技术文章 -->
+           <div class="hot-article">热门技术文章</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- <div class="example1">
+</div> -->
+<!-- 侧边栏 -->
+<div class="fix_sidebar">
+	<ul class="fixed-bar">
+		<li><a href="#">侧边栏功能1</a></li>
+		<li><a href="#">侧边栏功能2</a></li>
+		<li><a href="#">侧边栏功能3</a></li>
+	</ul>
+</div>
+<footer class="footer">
+	<p>我的博客：墨客图图</p>
+	<h3>合作伙伴:阿里云</h3>
+	<div class="friendship-link">
+	<h3>友情链接</h3>
+		<ul>
+			<li><a href="http://www.phpstudy.net/css3/">CSS参考手册</a></li>
+			<li><a href="https://nodejs.org/en/">Node.js官网</a></li>
+			<li><a href="http://www.cnblogs.com/PeunZhang/">白色橡树-博客园</a></li>
+			<li><a href="http://www.cnblogs.com/PeunZhang/" title="最大的技术知识分享与学习平台">W3Cschool</a></li>
+			<li><a href="http://www.cnblogs.com/PeunZhang/">w3cschool菜鸟教程</a></li>
+			<li><a href="http://www.alloyteam.com/nav/">Web前端导航</a></li>
+			<li><a href="http://so.uigreat.com/">UI设计师导航</a></li>
+		</ul>
+	</div>
+</footer>
+<!-- <script src="js/pdfobject.js"></script>
+<script>
+PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1");
+
+//PDF打开参数“页面”选项别名。这里输入的任何数字都会导致PDF被打开到指定的页码（如果浏览器支持它）。如果未指定，PDF将在第1页打开。
+
+// var options = {
+//     height: "400px",
+//     pdfOpenParams: { view: 'FitV', page: '10' }
+// };
+// PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1", options); 
+
+
+
+
+</script> -->
+</body>
+</html>

@@ -1,0 +1,288 @@
+*{
+	margin: 0;
+	padding: 0;
+	border:0;
+	font-size: 62.5%;
+}
+body{
+	background-color: #f4f6f8;
+}
+ul{
+	list-style: none;
+	padding:0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.head{
+	/*position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;*/
+	max-width:123rem;
+	height: 8rem;
+ 
+	overflow: hidden;
+	background-color: #fafafa;
+	border-bottom: 1px solid #555;
+   /* display: flex;
+    align-items: center;*/
+	
+}
+
+.head-box{
+	margin:0;
+	padding:0;
+    float:left;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.head-box ul li{
+	margin: 0 2rem;
+	float:left;
+}
+.txt ul li{
+float: left;
+}
+
+.one{
+	width: 10rem;
+	height: 4rem;
+	line-height: 4rem;
+	text-align: center;
+	background-color: #3dca99;
+	color:#fff;
+	font-size: 2.4rem;
+}
+
+
+.head-box a,.login a{
+	color: #999;
+	font-size: 2.4rem;
+    text-decoration: none;
+}
+.head-box a:hover{
+	color: #3dca99;
+	font-weight:700;
+	border-bottom: 1px solid #3dca99;
+}
+.login{
+	float: right;
+	text-align: center;
+	color: #000;
+    line-height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}
+.login a:hover{
+	color: #333;
+	border-bottom: 1px solid #00b38a;
+}
+
+/*广告图片*/
+/*.advert{
+	clear: both;
+	width:100%;
+	height: 400px;
+
+}
+
+.middle{
+	width: 100%;
+	height: 400px;
+	background-color: #c8b4a0;
+    float: left;
+}
+
+.left{
+	width: 320px;
+	height: 400px;
+	background-color: #b4283c;
+	float:left;
+	margin-left:-100%;
+}
+
+.small-pic li{
+    width: 320px;
+	height: 198px;
+	background-color: #b4283c;
+}
+.small-2{
+	margin-top: 4px;
+}
+
+.right{
+	width: 200px;
+	height: 400px;
+	background-color: #787878;
+	float:left;
+	margin-left:-200px;
+}
+.inner{
+	margin-left: 330px;
+	margin-right: 210px;
+}*/
+
+
+
+
+
+.container{
+	padding-right:15px;
+	padding-left:15px;
+	padding-top: 15px;
+	margin:0 auto;
+	min-width:1230px !important;
+	width:1230px !important;
+	
+
+}
+.bo-left{
+	width: 150px;
+	padding:10px 0;
+	background-color: #fff;
+	position: absolute;
+	-webkit-box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+	box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);
+}
+.bo-left .nav>li>a{
+	display: block;
+	line-height: 40px;
+	background-color: #fff;
+	padding:0 20px;
+	color:#404040;
+	font-size: 16px;
+	text-align: center;
+
+}
+
+.bo-main{
+	margin-left: 180px;
+	position: relative;
+	height: 600px;
+}
+.bo-main-left{
+	float: left;
+	width: 100%;
+	
+}
+.bo-main-right{
+	float: left;
+	margin-left: -310px;
+	width: 310px;
+	
+}
+/*做笔记*/
+.note{
+	/*display: block;*/
+	font-size: 18px;
+	width: 310px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	background-color: #fff;
+}
+/*推荐主题和热门技术文章*/
+.theme,.hot-article{
+	background-color: #fff;
+	margin-top:20px;
+	height: 500px;
+	text-align: center;
+	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.bo-main-left-content{
+	margin-right: 340px;
+}
+/*广告栏*/
+/*
+.banner{
+	width: 680px;
+	height: 239px;
+	background-color: #c8b4a0;
+	margin-bottom: 20px;
+}
+*/
+/*文章*/
+.article{
+	margin-bottom: 20px;
+	text-align: center;
+}
+.article .item{
+	width: 680px;
+	height:200px;
+	background-color: #fff;
+	border: 1px solid #555;
+	margin-bottom: 10px;
+}
+.item a{
+	color: #000;
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+/*侧边栏*/
+.fixed-bar{
+	clear:both;
+	position: fixed;
+	right: 1rem;
+	z-index: 1000;
+	bottom: 7rem;
+	border: 1px solid #555;
+}
+.fixed-bar ul{
+margin: 0;
+padding: 0;
+}
+.fixed-bar ul li{
+/*height: 52px;
+width: 52px;*/
+background-color: #fff;
+}
+.fixed-bar a{
+	color:#000;
+	display: block;
+	text-align: center;
+	/*width: 100%;
+	height: 100%;*/
+	background-color: #fff;
+}
+
+
+
+.footer{
+	clear: both;
+    width:1230px;
+	color: #fff;
+    height: 20rem;
+	background-color: #212425; 
+	text-align: center;
+}
+.footer p{
+	color: #fff;
+	font-size: 2rem;
+}
+.footer h3{
+	font-weight:bold;
+}
+.friendship-link{
+	float:left;
+	margin-left:2rem;
+}
+.friendship-link ul li{
+	margin-top:1rem;
+}
+.friendship-link a{
+	color:#fff;
+}
+.friendship-link a:hover{
+	color:#108ee9;
+	text-decoration:underline;
+}
