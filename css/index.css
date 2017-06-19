@@ -48,13 +48,9 @@ float: left;
 }
 
 .one{
-	width: 10rem;
-	height: 4rem;
-	line-height: 4rem;
 	text-align: center;
-	background-color: #3dca99;
-	color:#fff;
-	font-size: 2.4rem;
+	color:#3dca99;
+	font-size: 2.8rem;
 }
 
 
