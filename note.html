@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>做笔记</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			border:0;
+		}
+		.write-note{
+			width: 980px;
+			margin:30px auto 0;
+			border:1px solid #555;
+		}
+		.write-note .note-title,.summary{
+			margin:20px auto;
+			width:720px;
+		}
+		.note-title input,.summary textarea,textarea.editor{
+			border:0px;
+			font-size:28px;
+			height: auto;
+			padding:10px;
+			border-radius: 5px;
+			background-color: #f8f8f0;
+		}
+		input.form-control,textarea.summary-area,textarea.editor{
+			display: block;
+			width: 100%;
+		}
+		.show_editor{
+			width:720px;
+			height: 600px;
+			margin:20px auto;		
+			border-radius: 5px;
+		}
+
+		.btn-publish{
+			 margin:20px auto;
+			 width:80px;
+			 /*height: 50px;*/
+		}
+		.write-note button{
+			width:80px;
+			height: 50px;
+			color: #fff;
+		    background-color:#c9b4a1;
+		    border:1px solid #c9b4a1;
+		    border-radius: 5px;
+		    font-size:28px;
+		   
+		}
+	</style>
+</head>
+<body>
+	<div class="write-note">
+		<div class="note-title">
+		<input type="text" name="title" placeholder ="请输入标题" class="form-control">
+		</div>
+
+	    <div class="summary">
+	    	<textarea name="summary" rows="3" class="summary-area" placeholder ="请输入摘要"></textarea>
+	    </div>
+
+         <div class="show_editor">
+         	<textarea name="txt" rows="18" class="editor"    placeholder ="文章写作"></textarea>
+         </div>
+         <div class="btn-publish">
+         	  <button>发表</button>
+         </div>
+
+
+	</div>
+</body>
+</html>
