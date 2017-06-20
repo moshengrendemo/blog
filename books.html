@@ -46,23 +46,23 @@
     		<img src="img/cssquanwei.jpg">
     		<p class="desc">css权威指南</p>
     	</a></li>
-    	 <li id="item2"><a href="#">
+    	 <li id="item1"><a href="#">
     		<img src="img/httpquanwei.jpg">
     		<p class="desc">http权威指南</p>
     	</a></li>
-    	 <li id="item3"><a href="#">
+    	 <li id="item1"><a href="#">
     		<img src="img/javascriptgaoji.jpg">
     		<p class="desc">javascript高级程序设计</p>
     	</a></li>
-    	 <li id="item4"><a href="#">
+    	 <li id="item1"><a href="#">
     		<img src="img/javascriptquanwei.jpg">
     		<p class="desc">javascript权威指南</p>
     	</a></li>
-    	 <li id="item5"><a href="#">
+    	 <li id="item1"><a href="#">
     		<img src="img/sheji.jpg">
     		<p class="desc">JavaScript设计模式</p>
     	</a></li>
-    	 <li id="item6"><a href="#">
+    	 <li id="item1"><a href="#">
     		<img src="img/yuyan.jpg">
     		<p class="desc">javascript语言精粹</p>
     	</a></li>
@@ -70,64 +70,64 @@
 
 
 
-	    <li><a href="#">
+	    <li id="item1"><a href="#">
     		<img src="img/tiwen.jpg">
     		<p class="desc">提问的力量</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/shuohua.jpg">
     		<p class="desc">蔡康永的说话之道</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/weilai.jpg">
     		<p class="desc">未来简史</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/xia.jpg">
     		<p class="desc">自下而上</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/xiegang.jpg">
     		<p class="desc">斜杠青年：如何开启你的多重身份</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/daxiang.jpg">
     		<p class="desc">让大象飞</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/lixing.jpg">
     		<p class="desc">理性乐观派：一部人类经济进步史</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/3dian.jpg">
     		<p class="desc">重要的事情说3点</p>
     	</a></li>
-        <li><a href="#">
+        <li id="item1"><a href="#">
     		<img src="img/jueduan.jpg">
     		<p class="desc">决断力</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/mai.jpg">
     		<p class="desc">卖什么都是卖体验</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/rixing.jpg">
     		<p class="desc">日行一事</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/wuzhong.jpg">
     		<p class="desc">物种大交换开创的世界史</p>
     	</a></li>
     	
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/yixiang.jpg">
     		<p class="desc">异想,天开</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/yumei.jpg">
     		<p class="desc">愚昧者的愚昧</p>
     	</a></li>
-    	<li><a href="#">
+    	<li id="item1"><a href="#">
     		<img src="img/zhinu.jpg">
     		<p class="desc">制怒:如何控制自己和他人的情绪</p>
     	</a></li>
@@ -142,9 +142,74 @@
 <script>
 var books=document.getElementById("books");
 var items=document.getElementById("item");
+var item=document.getElementsByTagName("li");
+
+//遍历li,实现点击li实现对应的功能
+function btnbook(){
+     for(var i=0; i<item.length; i++){
+
+     item[i].index=i;
+     item[i].onclick=function(){
+     	
+      if(this.index==0){
+      	alert("我是css权威指南"+this.index);
+      	PDFObject.embed("pdf/css权威指南.pdf", ".example1");
+      }else if(this.index==1){
+      	alert("我是http权威指南"+this.index);
+      	PDFObject.embed("pdf/HTTP权威指南完整版.pdf", ".example1");
+      }else if(this.index==2){
+      	alert("我是javascript高级程序设计"+this.index);
+      	PDFObject.embed("pdf/JavaScript高级程序设计第3版.pdf", ".example1");
+      }else if(this.index==3){
+      	alert("我是javascript权威指南第6版"+this.index);
+      	PDFObject.embed("pdf/javascript权威指南第6版.pdf", ".example1");
+      }else if(this.index==4){
+      	alert("我是JavaScript设计模式"+this.index);
+      		PDFObject.embed("pdf/JavaScript设计模式+算法.pdf", ".example1");
+      }else if(this.index==5){
+      	alert("我是javascript语言精粹"+this.index);
+        PDFObject.embed("pdf/JavaScript语言精粹_修订版.pdf", ".example1");	
+      }else if(this.index==6){
+      	alert("我是提问的力量"+this.index);
+      }else if(this.index==7){
+      	alert("我是蔡康永的说话之道"+this.index);
+      }else if(this.index==8){
+      	alert("我是未来简史"+this.index);
+      }else if(this.index==9){
+      	alert("我是自下而上"+this.index);
+      }else if(this.index==10){
+      	alert("我是斜杠青年：如何开启你的多重身份"+this.index);
+      }else if(this.index==11){
+      	alert("我是让大象飞"+this.index);
+      }else if(this.index==12){
+      	alert("我是理性乐观派：一部人类经济进步史"+this.index);
+      }else if(this.index==13){
+      	alert("我是重要的事情说3点"+this.index);
+      }else if(this.index==14){
+      	alert("我是决断力"+this.index);
+      }else if(this.index==15){
+      	alert("我是卖什么都是卖体验"+this.index);
+      }else if(this.index==16){
+      	alert("我是日行一事"+this.index);
+      }else if(this.index==17){
+      	alert("我是物种大交换开创的世界史"+this.index);
+      }else if(this.index==18){
+      	alert("我是异想,天开"+this.index);
+      }else if(this.index==19){
+      	alert("我是愚昧者的愚昧"+this.index);
+      }else if(this.index==20){
+      	alert("我是制怒:如何控制自己和他人的情绪"+this.index);
+      }
 
 
-PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1");
+     }
+
+}
+
+}
+
+btnbook();
+//PDFObject.embed("pdf/cssquanweizhinan.pdf", ".example1");
 
 //PDF打开参数“页面”选项别名。这里输入的任何数字都会导致PDF被打开到指定的页码（如果浏览器支持它）。如果未指定，PDF将在第1页打开。
 
