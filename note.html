@@ -9,20 +9,23 @@
 			padding:0;
 			border:0;
 		}
+		html,body{
+			font-size: 62.5%;
+		}
 		.write-note{
-			width: 980px;
-			margin:30px auto 0;
+			max-width: 98rem;
+			margin:3rem auto 0;
 			border:1px solid #555;
 		}
 		.write-note .note-title,.summary{
-			margin:20px auto;
-			width:720px;
+			margin:2rem auto;
+			width:72rem;
 		}
 		.note-title input,.summary textarea,textarea.editor{
 			border:0px;
-			font-size:28px;
+			font-size:2.8rem;
 			height: auto;
-			padding:10px;
+			padding:1rem;
 			border-radius: 5px;
 			background-color: #f8f8f0;
 		}
@@ -31,25 +34,25 @@
 			width: 100%;
 		}
 		.show_editor{
-			width:720px;
-			height: 600px;
+			width:72rem;
+			height: 72rem;
 			margin:20px auto;		
 			border-radius: 5px;
 		}
 
 		.btn-publish{
-			 margin:20px auto;
-			 width:80px;
+			 margin:2rem auto;
+			 width:8rem;
 			 /*height: 50px;*/
 		}
 		.write-note button{
-			width:80px;
-			height: 50px;
+			width:8rem;
+			height: 5rem;
 			color: #fff;
 		    background-color:#c9b4a1;
 		    border:1px solid #c9b4a1;
 		    border-radius: 5px;
-		    font-size:28px;
+		    font-size:2.8rem;
 		   
 		}
 	</style>
@@ -65,7 +68,7 @@
 	    </div>
 
          <div class="show_editor">
-         	<textarea name="txt" rows="18" class="editor"    placeholder ="文章写作"></textarea>
+         	<textarea name="txt" rows="28" class="editor"    placeholder ="文章写作"></textarea>
          </div>
          <div class="btn-publish">
          	  <button>发表</button>
