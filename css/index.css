@@ -16,27 +16,20 @@ a{
 	text-decoration: none;
 }
 .head{
-	/*position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;*/
-	max-width:123rem;
 	height: 8rem;
-	overflow: hidden;
-	background-color: #fafafa;
 	border-bottom: 1px solid #555;
+	 background-color: #fafafa;
    /* display: flex;
     align-items: center;*/
-	
 }
 
 .head-box{
 	margin:0;
 	padding:0;
-    float:left;
+	min-width:1260px;
     padding-top: 3rem;
     padding-bottom: 3rem;
-
+    background-color: #fafafa;
 }
 .head-box ul li{
 	margin: 0 2rem;
@@ -64,19 +57,22 @@ float: left;
 	border-bottom: 1px solid #3dca99;
 }
 .login{
-	float: right;
+    float:right;
 	text-align: center;
 	color: #000;
-    line-height: 4rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-right: 2rem;
+    margin-right:20px;
 }
 .login a:hover{
 	color: #333;
 	border-bottom: 1px solid #00b38a;
 }
-
+.head-box:after{
+	clear:both;
+}
+.head-box:after{
+	content:"";
+	display:table;
+}
 /*广告图片*/
 /*.advert{
 	clear: both;
@@ -126,8 +122,8 @@ float: left;
 	padding-left:15px;
 	padding-top: 15px;
 	margin:0 auto;
-	min-width:1230px !important;
-	width:1230px !important;
+	min-width:1230px ;
+	width:1230px ;
    position: relative;
 }
 .bo-left{
@@ -215,6 +211,13 @@ background-size:20px 20px;
 	width: 310px;
 	
 }
+.bo-main:before,.bo-main:after{
+	content:"";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	zoom:1;
+}
 /*做笔记*/
 .note{
 	display: block;
@@ -242,18 +245,157 @@ background-size:20px 20px;
 }
 /*推荐主题和热门技术文章*/
 .theme,.hot-article{
+	
 	background-color: #fff;
 	margin-top:20px;
 	height: 500px;
-	text-align: center;
+	/*text-align: center;*/
 	-webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow:hidden;
 }
+.theme-box,.hot-article-box{
+	position:relative;
+	max-width:100%;
+	height:500px;
+	margin-top:20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+.theme-box h3,.hot-article-box h3{
+	height:18px;
+	line-height:18px;
+	border-left:4px solid #ef2f11;
+	font-size:1.8rem;
+	padding-left:8px;
 
-
+}
+.theme-box ul li,.hot-article-box ul li{
+  margin-top:20px;
+}
+.theme-box  a:hover,.hot-article-box a:hover{
+color:#f00000;
+}
+.theme-box span,.hot-article-box span{
+	position:absolute;
+	bottom:20px;
+	left:0;
+	right:0;
+	border-top:1px solid #555;
+	display:block;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	cursor:pointer;
+	font-size:1.2rem;
+}
 .bo-main-left-content{
 	margin-right: 340px;
 }
+
+/*<!--广告滚动样式表-->*/
+ #banner {
+            position: relative;
+            width: 680px;
+            height: 239px;
+            overflow: hidden;
+            margin-bottom:20px;
+        }
+        
+        #list {
+            position: absolute;
+            z-index: 1;
+            width: 4760px;
+            height: 239px;
+        }
+        
+        #list img {
+            float: left;
+            width: 680px;
+            height: 239px;
+        }
+        
+        #buttons {
+            position: absolute;
+            left: 300px;
+            bottom: 20px;
+            z-index: 2;
+            height: 10px;
+            width: 100px;
+        }
+        
+        #buttons span {
+            float: left;
+            margin-right: 5px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #fff;
+            cursor: pointer;
+        }
+        
+        #buttons .on {
+            background: orangered;
+        }
+        
+        .arrow {
+            position: absolute;
+            top: 100px;
+            z-index: 2;
+            display: none;
+            width: 40px;
+            height: 40px;
+            font-size: 36px;
+            font-weight: bold;
+            line-height: 39px;
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, .3);
+            cursor: pointer;
+        }
+        
+        .arrow:hover {
+            background-color: rgba(0, 0, 0, .7);
+        }
+        
+        #banner:hover .arrow {
+            display: block;
+        }
+        
+        #prev {
+            left: 20px;
+        }
+        
+        #next {
+            right: 20px;
+        }
+        .bo-main-left-content:before,#banner:after{
+        	   content:"";
+	          clear: both;
+	         display: block;
+	        visibility: hidden;
+	       zoom:1;
+        }
+        
+ #banner:before,#banner:after{
+    content:"";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	zoom:1;
+} 
+.container-box:before.container-box:after{
+	content:"";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	zoom:1;
+
+}
+/*<!--广告滚动样式表-->*/
+
+
+
 /*广告栏*/
 /*
 .banner{
@@ -309,15 +451,27 @@ background-color: #fff;
 }
 
 
+.footer:before.footer:after{
+	content:"";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	zoom:1;
+
+}
+
 
 .footer{
 	clear: both;
-    width:1230px;
+   min-width:1260px;
+   height:40px;
+    z-index:10;
 	color: #fff;
     height: 20rem;
 	background-color: #212425; 
 	text-align: center;
 }
+
 .footer p{
 	color: #fff;
 	font-size: 2rem;
@@ -338,4 +492,11 @@ background-color: #fff;
 .friendship-link a:hover{
 	color:#108ee9;
 	text-decoration:underline;
+}
+.footer:after{
+	content:"";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	zoom:1;
 }
