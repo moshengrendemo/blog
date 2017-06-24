@@ -18,7 +18,8 @@ a{
 .head{
 	height: 8rem;
 	border-bottom: 1px solid #555;
-	 background-color: #fafafa;
+	background-color: #fff;
+	min-width:1260px;
    /* display: flex;
     align-items: center;*/
 }
@@ -26,10 +27,10 @@ a{
 .head-box{
 	margin:0;
 	padding:0;
-	min-width:1260px;
+	
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background-color: #fafafa;
+   
 }
 .head-box ul li{
 	margin: 0 2rem;
@@ -126,6 +127,14 @@ float: left;
 	width:1230px ;
    position: relative;
 }
+.container .first{
+	text-align:center;
+	color:#cfcfcf;
+	font-size:2.8rem;
+	background-color:#fff;
+    width:100%;
+    margin-bottom:2rem;
+}
 .bo-left{
 	width: 150px;
 	padding:10px 0;
@@ -141,7 +150,7 @@ float: left;
 	width:150px;
 	height:620px;
 	position: absolute;
-	top:248px;
+	top:280px;
 	text-align:center;
 	margin:30px 0;
 	background-color:#fff;
@@ -423,6 +432,28 @@ color:#f00000;
 	font-weight: bold;
 }
 
+.wrapper{
+	min-width:1260px;
+	clear:both;
+	text-align:center;
+	padding:15rem 15rem;
+	border:1px solid #000;
+	background-color:#fff;
+	margin-bottom:2rem;
+    box-sizing: border-box;
+	-moz-transition:background-color .5s ease-in;
+	-webkit-transition:background-color .5s ease-in;
+	-o-transition:background-color .5s ease-in;
+	-ms-transition:background-color .5s ease-in;
+	transition:background-color .5s ease-in;
+}
+.wrapper:hover{background-color:#000;}
+
+
+
+
+
+
 /*侧边栏*/
 .fixed-bar{
 	clear:both;
@@ -463,40 +494,48 @@ background-color: #fff;
 
 .footer{
 	clear: both;
-   min-width:1260px;
-   height:40px;
+    min-width:1260px;
     z-index:10;
 	color: #fff;
-    height: 20rem;
+    height: 40rem;
 	background-color: #212425; 
 	text-align: center;
 }
 
 .footer p{
+	padding-top:3rem;
 	color: #fff;
 	font-size: 2rem;
 }
 .footer h3{
 	font-weight:bold;
 }
-.friendship-link{
-	float:left;
-	margin-left:2rem;
+
+.footer .a-flex{
+	display:flex;
+	width:100%;
+	height:30rem;
+	padding:15px;
+	box-sizing: border-box;
+	list-style:none;
 }
-.friendship-link ul li{
+.a-flex li{
+	flex:1;
+	background-color:#666;
+	margin-left:10px;
+	color:#000;
+}
+.a-flex li:hover{
+	opacity:0.5;
+	color:#555;
+}
+.b-flex li{
 	margin-top:1rem;
 }
-.friendship-link a{
+.b-flex  a{
 	color:#fff;
 }
-.friendship-link a:hover{
-	color:#108ee9;
+.b-flex a:hover{
+	color:#fff;
 	text-decoration:underline;
-}
-.footer:after{
-	content:"";
-	clear: both;
-	display: block;
-	visibility: hidden;
-	zoom:1;
 }
